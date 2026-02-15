@@ -1,9 +1,12 @@
-import { createBrowserRouter, Navigate } from "react-router"
-import { MainLayout } from "@/layouts/MainLayout"
-import { ErrorPage } from "@/pages/ErrorPage"
-import { CreateRoomPage } from "@/features/rooms/pages/CreateRoomPage"
-import { EditRoomPage } from "@/features/rooms/pages/EditRoomPage"
-import { RoomListPage } from "@/features/rooms/pages/RoomListPage"
+import { createBrowserRouter, Navigate } from "react-router";
+import { MainLayout } from "@/layouts/MainLayout";
+import { ErrorPage } from "@/pages/ErrorPage";
+import { CreateRoomPage } from "@/features/rooms/pages/CreateRoomPage";
+import { EditRoomPage } from "@/features/rooms/pages/EditRoomPage";
+import { RoomListPage } from "@/features/rooms/pages/RoomListPage";
+import { CreateReservationPage } from "@/features/reservations/pages/CreateReservationPage";
+import { EditReservationPage } from "@/features/reservations/pages/EditReservationPage";
+import { ReservationListPage } from "@/features/reservations/pages/ReservationListPage";
 
 export const router = createBrowserRouter([
   { 
@@ -24,6 +27,15 @@ export const router = createBrowserRouter([
           { path: ':id/edit', element: <EditRoomPage /> }
         ]
       },
+      {
+        path: 'reservations',
+        children: [
+          { index: true, element: <ReservationListPage />, },
+          { path: 'new', element: <CreateReservationPage /> },
+          { path: ':id', element: <EditReservationPage /> },
+          { path: ':id/edit', element: <EditReservationPage /> }
+        ]
+      }
     ]
   }
 ])
