@@ -30,6 +30,7 @@ A modern, responsive Front-end Web Application for managing campus room reservat
 | **Routing** | [React Router](https://reactrouter.com/) | Declarative Routing |
 | **Forms** | [React Hook Form](https://react-hook-form.com/) | Performant, flexible forms |
 | **Validation** | [Zod](https://zod.dev/) | TypeScript-first schema validation |
+| **Error Display** | [React Hot Toast](https://react-hot-toast.com/) | Toast Notification for Global API Errors |
 | **HTTP** | [Axios](https://axios-http.com/) | Promise based HTTP client |
 
 ## Project Structure
