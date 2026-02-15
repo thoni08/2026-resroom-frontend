@@ -74,13 +74,21 @@ npm install
 3. **Configure Environment**
 Create a `.env` file in the root directory:
 ```env
-API_BASE_URL=http://localhost:5xxx/api
+VITE_API_BASE_URL=http://localhost:5xxx/api
 ```
 4. **Run Development Server**
 ```bash
 npm run dev
 ```
 Access the app at `http://localhost:5173`.
+
+## Environment Variables
+The application requires the following environment variables to be set in `.env`:
+
+| Variable | Description |
+| :--- | :--- |
+| `VITE_API_BASE_URL` | Back-end API base URL |
+| `VITE_BASE_URL` | Front-end app's base URL |
 
 ## Key Scripts
 * `npm run dev`: Starts the development server.
