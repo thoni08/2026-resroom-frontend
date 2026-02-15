@@ -71,12 +71,17 @@ cd 2026-resroom-frontend
 ```bash
 npm install
 ```
-3. **Configure Environment**
-Create a `.env` file in the root directory:
+3. **Set up Environment Variables**
+Copy the example environment file:
+```bash
+cp .env.example .env
+```
+4. **Configure Environment**
+Update your .env:
 ```env
 VITE_API_BASE_URL=http://localhost:5xxx/api
 ```
-4. **Run Development Server**
+5. **Run Development Server**
 ```bash
 npm run dev
 ```
